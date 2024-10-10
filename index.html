@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahesa</title>
+    <link rel="stylesheet" href="assets/package/bootstrap/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/package/fontawosome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="navigasi d-flex flex-row align-items-center p-2">
+      <img class="img-fluid ms-lg-3" src="assets/img/TikTok_logo.svg" width="150" alt="TikTok Logo" />
+      <div class="search position-relative">
+        <input class="form-control" type="text" placeholder="Search" />
+        <span class="position-absolute top-50 end-0 translate-middle-y me-3">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </div>
+      <div class="header-right d-flex align-items-center">
+        <button class="uploadBtn btn fw-bold">+ Upload</button>
+        <button class="send btn"><i class="fa-solid fa-paper-plane"></i></button>
+        <button class="message btn"><i class="fa-regular fa-message"></i></button>
+        <img class="profile me-2" src="assets/img/profile.jpeg" alt="Profile Picture" width="50" />
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="sideBar overflow-auto">
+        <div class="menu d-flex flex-column mt-3 mx-3 overflow-auto">
+          <h4 class="active">
+            <span class="me-2"><i class="fa-solid fa-house"></i></span>Home
+          </h4>
+          <h4 class="menuNonActive">
+            <span class="me-2"><i class="fa-solid fa-compass"></i></span>Jelajahi
+          </h4>
+          <h4 class="menuNonActive">
+            <span class="me-2"><i class="fa-solid fa-users"></i></span>Mengikuti
+          </h4>
+          <h4 class="menuNonActive">
+            <span class="me-2"><i class="fa-solid fa-video"></i></span>Live
+          </h4>
+          <h4 class="menuNonActive">
+            <span class="me-2"> <img class="profile me-2" src="assets/img/profile.jpeg" alt="Profile Picture" width="30" /> </span>Profile
+          </h4>
+          <hr />
+        </div>
+        <div class="event overflow-hidden">
+          <img class="eventTiktok mx-2" src="assets/img/eventTT.png" width="220px" />
+          <p class="textEvent">Buka Efek Tiktok,<br />dapatkan reward-nya</p>
+        </div>
+        <div class="footer d-flex flex-column mx-3 mt-3 text-secondary">
+          <p class="fw-bold">Perusahaan</p>
+          <p class="fw-bold">Program</p>
+          <p class="fw-bold">Ketentuan Kebijakan</p>
+          <p class="more position-relative">Lainnya</p>
+          <p>&copy; 2024 Tiktok</p>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <video id="myVideo" autoplay>
+          <source src="assets/videos/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="video-actions">
+          <button class="love-btn">
+            <i class="fa-solid fa-heart"></i>
+            <span>120</span>
+          </button>
+          <button class="comment-btn">
+            <i class="fa-regular fa-comment"></i>
+            <span>56</span>
+          </button>
+          <button class="share-btn">
+            <i class="fa-solid fa-share"></i>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-not-supported d-flex justify-content-center align-content-center">Website is not responsive. Please move to a screen larger than 1306px</div>
+    <script>
+      const video = document.getElementById("myVideo");
+
+      video.addEventListener("ended", function () {
+        setTimeout(() => {
+          video.play();
+        }, 2000);
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>

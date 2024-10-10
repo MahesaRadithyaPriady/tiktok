@@ -1,0 +1,165 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.navigasi {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.search {
+  width: 380px;
+  margin-left: 420px;
+  margin-right: 100px;
+}
+
+.search input {
+  border-radius: 20px;
+}
+
+.uploadBtn {
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.header-right .send,
+.header-right .message {
+  margin-left: 10px;
+}
+.profile {
+  border-radius: 50%;
+}
+
+.sideBar {
+  width: 250px;
+  overflow-y: auto;
+}
+
+.active {
+  color: rgb(255, 0, 43);
+}
+
+.menuNonActive {
+  margin-top: 20px;
+}
+
+.textEvent {
+  position: fi;
+  width: 250px;
+  margin-left: 10px;
+  color: rgb(227, 202, 61);
+  top: 26.3rem;
+  left: 3.5rem;
+  font-size: 13px;
+}
+
+.more {
+  font-size: 13px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.sideBar {
+  width: 230px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.video-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+video {
+  max-height: 90vh;
+  max-width: 100%;
+}
+
+.event {
+  position: relative;
+}
+.eventTiktok {
+  height: auto;
+}
+.textEvent {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.video-container {
+  position: relative;
+}
+.video-actions {
+  position: absolute;
+  right: 20rem;
+  top: 52%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.video-actions button {
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+}
+.video-actions button i {
+  font-size: 28px;
+}
+.video-actions button span {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+.video-actions .love-btn {
+  color: rgb(255, 48, 117);
+}
+
+@media (max-width: 1306px) {
+  .navigasi,
+  .main-container {
+    display: none;
+  }
+
+  .mobile-not-supported {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .video-actions {
+    position: absolute;
+    right: 19rem;
+    top: 52%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
